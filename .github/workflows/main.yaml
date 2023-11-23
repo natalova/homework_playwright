@@ -1,0 +1,16 @@
+name: e2e tests on playwright
+on:
+ push:
+  branches: [']nkovaleva/pom']
+jobs:
+ tests: 
+  run-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v3
+  - uses: actions/setup-node@v3
+  - name: Install dependecies
+    run: npm i
+  - name: Browsers
+    run: npx playwright install --with-deps
+  - name: Run playwright tests
+    run: npx playwright test guru.spec.js --headed --project chromium

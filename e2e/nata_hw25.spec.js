@@ -1,5 +1,6 @@
 // npx playwright test nata_hw25.spec.js --headed --project chromium
 // npx playwright test nata_hw25.spec.js --project chromium
+// npx playwright codegen google.com --geolocation="-0.20256,51.90224"  
 
 import { test, expect } from '@playwright/test';
 //const { chromium } = require('playwright');
@@ -45,12 +46,12 @@ test.skip('Test for GB geolocation', async ({ page }) => {
     
 // //    // const browser = await chromium.launch();
 //     const context = await browser.newContext({
-//     geolocation: { // Встановлення геолокації для Британії
+//     geolocation: { 
 //       latitude: 51.509865,
 //       longitude: -0.118092,
 //     },
 //     permissions: ['geolocation'],
-//     locale: 'en-GB', // Встановлення локалізації для Британії
+//     locale: 'en-GB', 
 //   });
 //     const page = await context.newPage();
 
