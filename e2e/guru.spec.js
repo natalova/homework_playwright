@@ -1,6 +1,9 @@
 // npx playwright test --headed --project chromium
 // npx playwright test guru.spec.js --headed --project chromium
 // npx playwright test guru.spec.js --headed --project chromium --workers 1
+// ENV_URL=https://guru99.com/ npx playwright test guru.spec.js --headed --project chromium
+// URL=1 npx playwright test guru.spec.js --headed --project chromium
+// URL=2 npx playwright test guru.spec.js --headed --project chromium
 
 const { test, expect } = require('@playwright/test');
 
@@ -9,7 +12,8 @@ test.describe('Open Guru website', () => {
     
 
     test.beforeEach(async ({ page }) => {
-        await page.goto('https://guru99.com/')
+        // await page.goto('https://guru99.com/')
+        await page.goto('/')
       })
     
     test('open the page', async ({ page }) => {
@@ -67,8 +71,15 @@ test.describe('Open Guru website', () => {
 
     test('test5', async ({ page }) => {
         const input = page.locator('input.gsc-input')
+        
+        await page.mouse.down()
+        await page.mouse.up()
+
+        await page.locator('div.g-content').screenshot({path: 'screenshots/header_with_search.png'})
+        await expect(page).toHaveScreenshot('screenshots/main-page-snapshot.png')
         await input.click()
         await input.fill('sap')
+        await page.screenshot({path: 'screenshots/sap_in_search_input_false.png', fullPage: false})
         await input.clear()
         await input.pressSequentially('SAP')
         await input.pressSequentially('Tutorial', {delay: 200})
