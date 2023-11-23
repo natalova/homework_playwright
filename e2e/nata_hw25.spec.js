@@ -18,13 +18,14 @@ test.describe("User's location", () => {
 
 test("Search in Google by GB", async ({ page }) => {
     const searchField = page.locator('.gLFyf')
-  
+    const mapBtn = page.getByRole('link', { name: 'Maps' })
+
     await page.goto('https://www.google.com/')
     await searchField.click()
     await page.keyboard.type('магазин одягу', {delay: 200})
     await searchField.press('Enter')
     await page.waitForSelector('#search')
     await page.screenshot({path: 'screenshots/success_search_GB.png', fullPage: false})
-    
+    await expect(mapBtn).toBeVisible()
   })
 })
