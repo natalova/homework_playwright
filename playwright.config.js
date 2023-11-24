@@ -38,7 +38,7 @@ module.exports = defineConfig({
       //  baseURL: process.env.ENV_URL,
     //  baseURL: process.env.URL === '1' ? 'https://www.test.guru99.com' : 'https://www.guru99.com',
       //  locale:'de-DE',
-      //  timezoneId: 'Europe/Berlin',
+       timezoneId: 'Europe/London',
       //  geolocation: { longitude: 12.492507, latitude: 41.889938  },
       //  permissions: ['geolocation'],
 

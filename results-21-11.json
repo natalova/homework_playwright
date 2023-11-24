@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -110,20 +110,20 @@
   },
   "suites": [
     {
-      "title": "guru.spec.js",
-      "file": "guru.spec.js",
+      "title": "nata_hw25.spec.js",
+      "file": "nata_hw25.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Open Guru website",
-          "file": "guru.spec.js",
-          "line": 11,
+          "title": "User's location",
+          "file": "nata_hw25.spec.js",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "open the page",
+              "title": "Search in Google by GB",
               "ok": true,
               "tags": [],
               "tests": [
@@ -137,185 +137,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 1894,
+                      "duration": 6945,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-23T18:46:27.096Z",
+                      "startTime": "2023-11-23T19:33:15.258Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "5810d20d682f836f02dc-3d2ae0ed5d4559967590",
-              "file": "guru.spec.js",
+              "id": "64acb50db6e01cb4acd4-92aad7b499d943da3d5d",
+              "file": "nata_hw25.spec.js",
               "line": 19,
-              "column": 5
-            },
-            {
-              "title": "test1",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 1802,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-23T18:46:27.069Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-277f560301df8d64d55a",
-              "file": "guru.spec.js",
-              "line": 24,
-              "column": 5
-            },
-            {
-              "title": "test2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 2163,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-23T18:46:27.071Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-8fdfab1022b07e952ff3",
-              "file": "guru.spec.js",
-              "line": 33,
-              "column": 5
-            },
-            {
-              "title": "test3",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 2499,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-23T18:46:27.074Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-c695de604b7732a24ac9",
-              "file": "guru.spec.js",
-              "line": 40,
-              "column": 5
-            },
-            {
-              "title": "test4",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-23T18:46:26.658Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-0bb6456926225c9a925f",
-              "file": "guru.spec.js",
-              "line": 58,
-              "column": 10
-            },
-            {
-              "title": "test5",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 4122,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-23T18:46:27.119Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-ab516584fed307ac7492",
-              "file": "guru.spec.js",
-              "line": 72,
               "column": 5
             }
           ]
@@ -325,7 +161,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-23T18:46:26.621Z",
-    "duration": 5811.001
+    "startTime": "2023-11-23T19:33:14.881Z",
+    "duration": 8156.097
   }
 }
