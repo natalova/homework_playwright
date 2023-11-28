@@ -15,7 +15,7 @@ jobs:
     - name: Run playwright tests
       run: npx playwright test guru.spec.js --project chromium --update-snapshots
     - name: Archiving the html report
-      uses: action/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       if: always()
       with:
         name: playwright-report
