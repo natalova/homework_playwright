@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -110,20 +110,20 @@
   },
   "suites": [
     {
-      "title": "guru.spec.js",
-      "file": "guru.spec.js",
+      "title": "newborn.spec.js",
+      "file": "newborn.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Open Guru website",
-          "file": "guru.spec.js",
-          "line": 11,
+          "title": "Verification steps for newborn website",
+          "file": "newborn.spec.js",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "open the page",
+              "title": "check the state after open the page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -137,121 +137,29 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 1419,
+                      "duration": 4929,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY0MzQsImV4cCI6MTcwMTM3MDAzNH0.5x-OL_DNI7iUsXsSxBDlQYvcMIBWyfO4HKYJb-S4HXc\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.431Z",
+                      "startTime": "2023-11-30T17:47:12.600Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "5810d20d682f836f02dc-3d2ae0ed5d4559967590",
-              "file": "guru.spec.js",
-              "line": 19,
-              "column": 5
-            },
-            {
-              "title": "test1",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 2801,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.449Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-277f560301df8d64d55a",
-              "file": "guru.spec.js",
-              "line": 24,
-              "column": 5
-            },
-            {
-              "title": "test2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 2374,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.439Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-8fdfab1022b07e952ff3",
-              "file": "guru.spec.js",
-              "line": 33,
-              "column": 5
-            },
-            {
-              "title": "test3",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 3435,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.430Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5810d20d682f836f02dc-c695de604b7732a24ac9",
-              "file": "guru.spec.js",
+              "id": "f48e2b1e9d9dac4d05f8-0ba47e4e65874ff2a729",
+              "file": "newborn.spec.js",
               "line": 40,
               "column": 5
             },
             {
-              "title": "test4",
+              "title": "usage POM",
               "ok": true,
               "tags": [],
               "tests": [
@@ -274,21 +182,21 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.038Z",
+                      "startTime": "2023-11-30T17:47:12.233Z",
                       "attachments": []
                     }
                   ],
                   "status": "skipped"
                 }
               ],
-              "id": "5810d20d682f836f02dc-0bb6456926225c9a925f",
-              "file": "guru.spec.js",
-              "line": 58,
+              "id": "f48e2b1e9d9dac4d05f8-b676f7abdab24c5c2831",
+              "file": "newborn.spec.js",
+              "line": 46,
               "column": 10
             },
             {
-              "title": "test5",
-              "ok": true,
+              "title": "without POM",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -299,23 +207,51 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 3623,
-                      "errors": [],
-                      "stdout": [],
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 12433,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n    at /Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js:52:61",
+                        "location": {
+                          "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
+                          "column": 61,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m })\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
+                            "column": 61,
+                            "line": 52
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n\n\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at /Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js:52:61\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY0MzMsImV4cCI6MTcwMTM3MDAzM30.QguzCt46rRJuWiN9q9Zglb6eeKGYWzJbYTjaNynQ_nA\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-24T08:41:29.464Z",
-                      "attachments": []
+                      "startTime": "2023-11-30T17:47:12.601Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
+                        "column": 61,
+                        "line": 52
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "5810d20d682f836f02dc-ab516584fed307ac7492",
-              "file": "guru.spec.js",
-              "line": 72,
+              "id": "f48e2b1e9d9dac4d05f8-baca45a3d1ce9536c05d",
+              "file": "newborn.spec.js",
+              "line": 51,
               "column": 5
             }
           ]
@@ -325,7 +261,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-24T08:41:29.011Z",
-    "duration": 5164.330999999999
+    "startTime": "2023-11-30T17:47:12.199Z",
+    "duration": 15799.116
   }
 }
