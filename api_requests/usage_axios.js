@@ -85,5 +85,4 @@ describe('Actions for users on dummy website', async() => {;
     console.log(updateUserData.statusText)
     console.log(updateUserData.status)
     })
-
 })

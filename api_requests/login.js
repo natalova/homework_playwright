@@ -3,7 +3,6 @@ const {expect} = require('chai')
 const data = require('./data/dummy_data.json')
 const fs = require('fs-extra')
 
-
 describe('login & getting token', async () => {
 
     it('get user by id', async() =>{
