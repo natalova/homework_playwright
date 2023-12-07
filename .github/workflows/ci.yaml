@@ -1,7 +1,5 @@
 name: CI API tests on playwright
 on:
-  push:
-    branches: ['kovakeva/mysql']
   pull_request:
     branches: ['kovakeva/mysql']
 jobs:
