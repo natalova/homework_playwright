@@ -1,8 +1,8 @@
 // ENV_URL=http://5.189.186.217 npx playwright test newborn.spec.js --headed --project chromium
+//ENV_URL=http://5.189.186.217 npx playwright test newborn.spec.js --project chromium --trace on --workers 1 --headed
 
-
-const { test, expect } = require('@playwright/test');
-const { MainPageNewborn } = require('./pages/mainPageNewborn')
+import { test, expect, request } from '@playwright/test';
+import { MainPageNewborn } from './pages/mainPageNewborn';
 
 
 test.describe ('Verification steps for newborn website', () => {
@@ -43,13 +43,16 @@ test.describe ('Verification steps for newborn website', () => {
         await expect(page.locator('div.row span.card-title').nth(0)).toHaveText('Виручка:')
     })
 
-    test.skip('usage POM', async ({ page }) => {
+    test('usage POM', async ({ page }) => {
         const mainpagenewborn = new MainPageNewborn(page)
         mainpagenewborn.verifyLogoutVisible()
     })
 
-    test('without POM', async ({ page }) => {
+    test.skip('without POM', async ({ page }) => {
         await expect(page.locator('ul > li.bold.last > a')).toHaveText('Вийти')
-    })
+    }, {timeout: 10000})
 
+    test.skip('using the request API', async ({ request }) => {
+        const response = await request.get()
+    })
 })

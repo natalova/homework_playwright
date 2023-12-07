@@ -1,0 +1,14 @@
+name: CI API tests on playwright
+on:
+  pull_reguest:
+    branches: ['nkovaleva/mysql']
+jobs:
+  tests: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - name: Install dependecies
+      run: npm ci
+    - name: Run playwright tests
+      run: npx run api_tests

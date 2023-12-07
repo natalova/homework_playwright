@@ -6,11 +6,10 @@ exports.MainPageNewborn = class MainPageNewborn {
    */
   constructor(page) {
     this.page = page;
-    this.logoutLink = page.locator('li > a.waves-effect', { hasText: 'Вийти'})
+    this.logoutLink = page.locator('li > a.waves-effect').nth(5)
   }
 
 async veryfyLogoutVisible() {
-    await expect(this.logoutLink).toBeVisible()
-}
-
+    await expect(this.logoutLink).toHaveText('Вийти')
+  }
 }

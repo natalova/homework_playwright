@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -110,92 +110,20 @@
   },
   "suites": [
     {
-      "title": "newborn.spec.js",
-      "file": "newborn.spec.js",
+      "title": "nata_hw28.spec.js",
+      "file": "nata_hw28.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Verification steps for newborn website",
-          "file": "newborn.spec.js",
-          "line": 8,
+          "title": "Verofication steps for newborn website",
+          "file": "nata_hw28.spec.js",
+          "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "check the state after open the page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4929,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY0MzQsImV4cCI6MTcwMTM3MDAzNH0.5x-OL_DNI7iUsXsSxBDlQYvcMIBWyfO4HKYJb-S4HXc\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-30T17:47:12.600Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f48e2b1e9d9dac4d05f8-0ba47e4e65874ff2a729",
-              "file": "newborn.spec.js",
-              "line": 40,
-              "column": 5
-            },
-            {
-              "title": "usage POM",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-30T17:47:12.233Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "f48e2b1e9d9dac4d05f8-b676f7abdab24c5c2831",
-              "file": "newborn.spec.js",
-              "line": 46,
-              "column": 10
-            },
-            {
-              "title": "without POM",
+              "title": "Create NEW category",
               "ok": false,
               "tags": [],
               "tests": [
@@ -207,52 +135,52 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "status": "failed",
-                      "duration": 12433,
+                      "duration": 2263,
                       "error": {
-                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n    at /Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js:52:61",
+                        "message": "Unexpected token U in JSON at position 0",
+                        "stack": "SyntaxError: Unexpected token U in JSON at position 0\n    at /Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js:48:26",
                         "location": {
-                          "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
-                          "column": 61,
-                          "line": 52
+                          "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                          "column": 26,
+                          "line": 48
                         },
-                        "snippet": "\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m })\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     expect(responseCategory\u001b[33m.\u001b[39mstatus(\u001b[35m201\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m bodyCategory \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m responseCategory\u001b[33m.\u001b[39mjson()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"_id\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"name\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
-                            "column": 61,
-                            "line": 52
+                            "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                            "column": 26,
+                            "line": 48
                           },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n\n\u001b[0m \u001b[90m 50 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at /Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js:52:61\u001b[22m"
+                          "message": "SyntaxError: Unexpected token U in JSON at position 0\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     expect(responseCategory\u001b[33m.\u001b[39mstatus(\u001b[35m201\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m bodyCategory \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m responseCategory\u001b[33m.\u001b[39mjson()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"_id\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"name\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js:48:26\u001b[22m"
                         }
                       ],
                       "stdout": [
                         {
-                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY0MzMsImV4cCI6MTcwMTM3MDAzM30.QguzCt46rRJuWiN9q9Zglb6eeKGYWzJbYTjaNynQ_nA\n"
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDE3MjY5NDAsImV4cCI6MTcwMTczMDU0MH0.B_g5K-UEObkYXx9GpuoCGEOD6uQkuBmkzr4WBaaWweM\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-30T17:47:12.601Z",
+                      "startTime": "2023-12-04T21:55:40.305Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/work/CoursesAQA/homework_playwright/e2e/newborn.spec.js",
-                        "column": 61,
-                        "line": 52
+                        "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                        "column": 26,
+                        "line": 48
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "f48e2b1e9d9dac4d05f8-baca45a3d1ce9536c05d",
-              "file": "newborn.spec.js",
-              "line": 51,
-              "column": 5
+              "id": "9baa3b29bcacf0a143ba-80104f6f5be70242d6b9",
+              "file": "nata_hw28.spec.js",
+              "line": 35,
+              "column": 3
             }
           ]
         }
@@ -261,7 +189,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-30T17:47:12.199Z",
-    "duration": 15799.116
+    "startTime": "2023-12-04T21:55:38.498Z",
+    "duration": 5067.384
   }
 }
