@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api_tests": "npx mocha api_requests/login.js --timeout=30000 && npx mocha api_requests/usage_axios.js --timeout=30000 --reporter mochawesome --reporter-options reportDir=html_reports,reportFilename=report.html"
+    "api_tests": "npx mocha api_requests/login.js --timeout=30000 --reporter mochawesome --reporter-options reportDir=html_reports,reportFilename=report.html && npx mocha api_requests/usage_axios.js --timeout=30000 --reporter mochawesome --reporter-options reportDir=html_reports,reportFilename=report.html"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,8 @@
     "axios": "^1.6.2",
     "chai": "^4.3.10",
     "fs-extra": "^11.2.0",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
   },
   "dependencies": {
     "@faker-js/faker": "^8.3.1",
