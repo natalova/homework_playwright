@@ -21,7 +21,7 @@ test.describe('Search', () => {
         
         await headerBlock.hover()
         await inputFieldMain.click()
-        await inputFieldMain.fill('Software')
+        await inputFieldMain.fill('Soft')
         await inputFieldMain.clear()
         await inputFieldMain.pressSequentially('Software testing', {delay: 200})
         await searchBtnMain.click()

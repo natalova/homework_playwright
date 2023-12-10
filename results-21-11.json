@@ -1,0 +1,195 @@
+{
+  "config": {
+    "configFile": "/Users/work/CoursesAQA/homework_playwright/playwright.config.js",
+    "rootDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results-21-11.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/work/CoursesAQA/homework_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "log_in",
+        "name": "log_in",
+        "testDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "login.setup.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/work/CoursesAQA/homework_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "logged in",
+        "name": "logged in",
+        "testDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "newborn.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/work/CoursesAQA/homework_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/work/CoursesAQA/homework_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/work/CoursesAQA/homework_playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/work/CoursesAQA/homework_playwright/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.39.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "nata_hw28.spec.js",
+      "file": "nata_hw28.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verofication steps for newborn website",
+          "file": "nata_hw28.spec.js",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create NEW category",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 2263,
+                      "error": {
+                        "message": "Unexpected token U in JSON at position 0",
+                        "stack": "SyntaxError: Unexpected token U in JSON at position 0\n    at /Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js:48:26",
+                        "location": {
+                          "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                          "column": 26,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     expect(responseCategory\u001b[33m.\u001b[39mstatus(\u001b[35m201\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m bodyCategory \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m responseCategory\u001b[33m.\u001b[39mjson()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"_id\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"name\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                            "column": 26,
+                            "line": 48
+                          },
+                          "message": "SyntaxError: Unexpected token U in JSON at position 0\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     expect(responseCategory\u001b[33m.\u001b[39mstatus(\u001b[35m201\u001b[39m))\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mconst\u001b[39m bodyCategory \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m responseCategory\u001b[33m.\u001b[39mjson()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"_id\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m     expect(bodyCategory)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"name\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js:48:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDE3MjY5NDAsImV4cCI6MTcwMTczMDU0MH0.B_g5K-UEObkYXx9GpuoCGEOD6uQkuBmkzr4WBaaWweM\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-04T21:55:40.305Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/work/CoursesAQA/homework_playwright/e2e/nata_hw28.spec.js",
+                        "column": 26,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "9baa3b29bcacf0a143ba-80104f6f5be70242d6b9",
+              "file": "nata_hw28.spec.js",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-12-04T21:55:38.498Z",
+    "duration": 5067.384
+  }
+}
